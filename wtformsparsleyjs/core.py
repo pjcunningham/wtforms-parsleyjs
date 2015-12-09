@@ -65,7 +65,7 @@ def parsley_kwargs(field, kwargs):
             _number_range_kwargs(new_kwargs, vali)
         if isinstance(vali, DataRequired) or isinstance(vali, InputRequired):
             _input_required_kwargs(new_kwargs)
-            _trigger_kwargs(new_kwargs, u'key')
+            _trigger_kwargs(new_kwargs, u'blur')
         if isinstance(vali, Regexp) and not 'data_regexp' in new_kwargs:
             _regexp_kwargs(new_kwargs, vali)
         if isinstance(vali, URL):
